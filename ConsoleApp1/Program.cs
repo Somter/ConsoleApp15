@@ -74,7 +74,7 @@ class Program
         var EmplKiev = from e in employees
                             join d in departments on e.DepId equals d.Id
                             where d.City == "Kyiv" && e.Age > 23
-                            select new { e.FirstName, e.LastName, e.Age };
+                            select new { e.FirstName, e.LastName, e.Age }; 
 
         Console.WriteLine("\nEmployees from Kyiv older than 23:");
         foreach (var emp in EmplKiev)
